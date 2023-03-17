@@ -9,22 +9,13 @@ int main(void)
 {
 	char c;
 
-	char d;
-
 	c = 'a';
-	d = 'A';
 	while
-		(d <= 'z') {
-			putchar(c);
+		(c <= 'z') {
+			if ((c != 'q' && c != 'e') && c <= 'z')
+				putchar(c);
 			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-	}
-	putchar ('\n') i--;
-	return (0);
-} 
-		
 
+		}
+	putchar('\n');
+	return (0);
